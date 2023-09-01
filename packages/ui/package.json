@@ -6,17 +6,26 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
-    "generate:component": "turbo gen react-component"
+    "generate:component": "turbo gen react-component",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "react": "^17.0.2",
+    "happy-dom": "^10.11.2",
+    "react": "^18.0.0",
     "sass": "^1.66.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2",
-    "typescript-plugin-css-modules": "^5.0.1"
+    "typescript-plugin-css-modules": "^5.0.1",
+    "vitest": "^0.34.3"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
   }
 }
