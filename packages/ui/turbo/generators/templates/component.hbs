@@ -5,9 +5,9 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export const {{ pascalCase name }} = ({ children }: Props) => {
+export default function {{ pascalCase name }}({ children }: Props) {
   return (
-    <div>
+    <div className={styles['container']}>
       <h1>{{ name }}</h1>
       {children}
     </div>

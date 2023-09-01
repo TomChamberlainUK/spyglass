@@ -21,7 +21,13 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       {
         type: "add",
+        path: "tests/components/{{pascalCase name}}.test.tsx",
+        templateFile: "templates/componentTest.hbs",
+      },
+      {
+        type: "add",
         path: "src/styles/{{pascalCase name}}.module.scss",
+        templateFile: "templates/componentStyle.hbs"
       },
       {
         type: "append",
