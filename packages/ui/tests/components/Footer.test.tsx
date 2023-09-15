@@ -17,12 +17,12 @@ describe('<Footer />', () => {
     expect(component).toBeInTheDocument();
   });
 
-  it('Should render the text "BBC"', () => {
+  it('Should render BBC logo as an image with an alt tag', () => {
     render(
       <Footer />
     );
 
-    const component = screen.getByText(/BBC/);
+    const component = screen.getByAltText(/BBC logo/i);
     expect(component).toBeInTheDocument();
   });
 });

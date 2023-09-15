@@ -1,3 +1,10 @@
 .container {
-  width: 100%;
+  display: grid;
+  place-content: center;
+  padding: 0.5rem 1rem;
+  background-color: black;
+}
+
+.logo {
+  height: 2rem;
 }
