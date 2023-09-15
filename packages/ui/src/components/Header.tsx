@@ -1,5 +1,9 @@
 import * as React from 'react';
 
 export default function Header({ text }: { text: string }) {
-  return <h1>{text}</h1>;
+  return (
+    <header>
+      {text}
+    </header>
+  );
 };
