@@ -10,19 +10,19 @@ describe('<Header />', () => {
 
   it('Should render', () => {
     render(
-      <Header text="Test" />
+      <Header />
     );
 
     const component = screen.getByRole('banner');
     expect(component).toBeInTheDocument();
   });
 
-  it('Should render provided text', () => {
+  it('Should render BBC logo as an image with an alt tag', () => {
     render(
-      <Header text="Test" />
+      <Header />
     );
 
-    const component = screen.getByText(/Test/);
+    const component = screen.getByAltText(/BBC logo/i);
     expect(component).toBeInTheDocument();
-  })
+  });
 });

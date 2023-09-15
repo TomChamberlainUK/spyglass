@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header text="Web" />
+        <Header />
           {children}
         <Footer />
       </body>
