@@ -1,4 +1,5 @@
 import { Header, Footer } from 'ui';
+import styles from '../src/styles/layout.module.scss';
 import '../src/styles/global.scss';
 
 export default function RootLayout({
@@ -9,9 +10,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-          {children}
-        <Footer />
+        <div className={styles['container']}>
+          <Header />
+            <div className={styles['content']}>
+              {children}
+            </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
