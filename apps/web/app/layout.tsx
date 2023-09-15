@@ -1,4 +1,5 @@
 import { Header, Footer } from 'ui';
+import '../src/styles/global.scss';
 
 export default function RootLayout({
   children,
