@@ -9,6 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Spyglass</title>
+      </head>
       <body>
         <div className={styles['container']}>
           <Header />
