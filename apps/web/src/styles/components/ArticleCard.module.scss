@@ -1,0 +1,28 @@
+.container {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: grey;
+}
+
+.headline {
+  font-size: 1.125rem;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+
+  &__cell {
+    &--right {
+      text-align: right;
+    }
+  }
+}
