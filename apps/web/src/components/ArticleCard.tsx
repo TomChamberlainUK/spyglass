@@ -1,11 +1,25 @@
 import styles from '../styles/components/ArticleCard.module.scss';
 
-export default function ArticleCard() {
+type Props = {
+  headline: string;
+  views: string;
+  youth: string;
+  recirculation: string;
+  engaged: string;
+}
+
+export default function ArticleCard({
+  headline,
+  views,
+  youth,
+  recirculation,
+  engaged
+}: Props) {
   return (
     <div className={styles['container']}>
       <img className={styles['image']} />
       <h1 className={styles['headline']}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        {headline}
       </h1>
       <hr />
       <table className={styles['table']}>
@@ -14,7 +28,7 @@ export default function ArticleCard() {
             Views
           </td>
           <td className={styles['table__cell--right']}>
-            2,415,716
+            {views}
           </td>
         </tr>
         <tr>
@@ -22,7 +36,7 @@ export default function ArticleCard() {
             Youth
           </td>
           <td className={styles['table__cell--right']}>
-            18%
+            {youth}
           </td>
         </tr>
         <tr>
@@ -30,7 +44,7 @@ export default function ArticleCard() {
             Recirculation
           </td>
           <td className={styles['table__cell--right']}>
-            9%
+            {recirculation}
           </td>
         </tr>
         <tr>
@@ -38,7 +52,7 @@ export default function ArticleCard() {
             Engaged
           </td>
           <td className={styles['table__cell--right']}>
-            0:35
+            {engaged}
           </td>
         </tr>
       </table>

@@ -13,10 +13,34 @@ export default function ArticlesPage() {
         Articles
       </h1>
       <div className={styles['articles-list']}>
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+        <ArticleCard
+          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          views="2,415,716"
+          youth="18%"
+          recirculation="9%"
+          engaged="0:35"
+        />
+        <ArticleCard
+          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          views="2,415,716"
+          youth="18%"
+          recirculation="9%"
+          engaged="0:35"
+        />
+        <ArticleCard
+          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          views="2,415,716"
+          youth="18%"
+          recirculation="9%"
+          engaged="0:35"
+        />
+        <ArticleCard
+          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          views="2,415,716"
+          youth="18%"
+          recirculation="9%"
+          engaged="0:35"
+        />
       </div>
     </>
   );
