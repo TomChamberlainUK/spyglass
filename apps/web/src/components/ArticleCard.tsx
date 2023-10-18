@@ -21,7 +21,7 @@ export default function ArticleCard({
       <h1 className={styles['headline']}>
         {headline}
       </h1>
-      <hr />
+      <hr className={styles['horizontal-rule']} />
       <table className={styles['table']}>
         <tbody className={styles['table__body']}>
           <tr>
