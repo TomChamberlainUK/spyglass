@@ -4,4 +4,20 @@ html, body {
 
 body {
   margin: 0;
+  font-family: ReithSans, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: ReithSans;
+  src:
+    url("https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Rg.woff2") format("woff2"),
+    url("https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Rg.woff") format("woff");
+}
+
+@font-face {
+  font-family: ReithSans;
+  src:
+    url("https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Bd.woff2") format("woff2"),
+    url("https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Bd.woff") format("woff");
+  font-weight: 700
 }
