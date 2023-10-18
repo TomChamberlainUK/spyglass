@@ -23,38 +23,40 @@ export default function ArticleCard({
       </h1>
       <hr />
       <table className={styles['table']}>
-        <tr>
-          <td>
-            Views
-          </td>
-          <td className={styles['table__cell--right']}>
-            {views}
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Youth
-          </td>
-          <td className={styles['table__cell--right']}>
-            {youth}
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Recirculation
-          </td>
-          <td className={styles['table__cell--right']}>
-            {recirculation}
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Engaged
-          </td>
-          <td className={styles['table__cell--right']}>
-            {engaged}
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>
+              Views
+            </td>
+            <td className={styles['table__cell--right']}>
+              {views}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Youth
+            </td>
+            <td className={styles['table__cell--right']}>
+              {youth}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Recirculation
+            </td>
+            <td className={styles['table__cell--right']}>
+              {recirculation}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Engaged
+            </td>
+            <td className={styles['table__cell--right']}>
+              {engaged}
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );
