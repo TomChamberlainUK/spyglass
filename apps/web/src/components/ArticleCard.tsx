@@ -23,7 +23,7 @@ export default function ArticleCard({
       </h1>
       <hr />
       <table className={styles['table']}>
-        <tbody>
+        <tbody className={styles['table__body']}>
           <tr>
             <td>
               Views

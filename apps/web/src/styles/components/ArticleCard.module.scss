@@ -13,12 +13,17 @@
 }
 
 .headline {
+  color: rgba(0, 0, 0, 0.87);
   font-size: 1.125rem;
 }
 
 .table {
   width: 100%;
   table-layout: fixed;
+
+  &__body {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
   &__cell {
     &--right {
